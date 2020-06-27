@@ -14,11 +14,11 @@ b16 = "b16"
 
 
 # 2. Questions
-print("Would you like to encode or decode this string")
+print("Would you like to encode or decode this string?")
 e_or_d = input()
 print("")
 print("")
-print("Which format will you be using")
+print("Which format will you be using:")
 print("b64, b32, or b16?")
 form = input()
 print("")
@@ -33,21 +33,6 @@ print("")
 print("")
 
 # 2. Program
-def base(e_or_d, form, count, string):
-    if e_or_d == "encode":
-        count = count
-        a = 0
-        while count > a and form == "b64":
-            return base64.b64encode(string)
-            a += 1
-
-
-
-    #elif e_or_d == "decode":
-
-
-    else:
-        return "Please choose encode or decode."
 
 
 print(e_or_d)
