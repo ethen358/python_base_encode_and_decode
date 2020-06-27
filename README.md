@@ -10,4 +10,5 @@
     4. String to decode/encode (Place inside double quotes)
 
 I am still very new to programming and will update this program as I learn more.
+
 Feel free to email any suggestions to: 1ethen358@gmail.com
