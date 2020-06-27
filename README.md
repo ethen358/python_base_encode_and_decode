@@ -1,6 +1,6 @@
 # Python Decode and Encode
 
-###This is a program designed to decode or encode a given string for a set number of times with basic user inputs.
+### This is a program designed to decode or encode a given string for a set number of times with basic user inputs.
 
 **The user inputs are:**
 
