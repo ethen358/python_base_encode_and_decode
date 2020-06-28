@@ -16,23 +16,21 @@ import base64
 
 
 # 2. Questions
-print("Would you like to encode or decode this string?")
-e_or_d = input(str())
 print("")
+print("Would you like to encode or decode this string?")
+print("(e or d)")
+e_or_d = input(str())
 print("")
 print("Which format will you be using:")
 print("b64, b32, or b16?")
 form = input(str())
 print("")
-print("")
 print("How many times would you like to do this?")
 count = input()
 count = int(count)
 print("")
-print("")
-print("Please enter the string surrounded by \"Double Quotes\":")
+print("Please enter the string:")
 message = input(str())
-print("")
 print("")
 
 # 2. Program
@@ -119,32 +117,40 @@ def decoder16(message, count):
 
 
 # 3. Encoder
-def e_vs_d(e_or_d, message, count):
-    if e_or_d == "encode" and form == "b64":
-        encoder64(message, count)
-        #elif form == "b32"
-
-        #elif form == "b16"
-
-        #else:
-            #print("The options were: b64, b32, b16")
-    #elif e_or_d == "decode"
-
+def e_vs_d(e_or_d, form, message, count):
+    if e_or_d == "e":
+        if form == "b64":
+            encoder64(message, count)
+        elif form == "b32":
+            encoder32(message, count)
+        elif form == "b16":
+            encoder16(message, count)
+        else:
+            print("Please input \"b64\", \"b32\", or \"b16\" (no spaces)")
+    elif e_or_d == "d":
+        if form == "b64":
+            decoder64(message, count)
+        elif form == "b32":
+            decoder32(message, count)
+        elif form == "b16":
+            decoder16(message, count)
+        else:
+            print("Please input \"b64\", \"b32\", or \"b16\" (no spaces)")
     else:
-        print("Pick encode or Decode")
+        print("Please input \"e\" or \"d\" (no spaces)")
+        
+    #elif e_vs_d == "e" and form == "b32":
+    #    encoder32(message, count)
+    #elif e_vs_d == "e" and form == "b16":
+    #    encoder16(message, count)
+    #elif e_vs_d == "d" and form == "b64":
+    #    decoder64(message, count)
+    #elif e_vs_d == "d" and form == "b32":
+    #    decoder32(message, count)
+    #elif e_vs_d == "d" and form == "b16":
+    #    decoder16(message, count)
+    #print(e_or_d, message, count, form)
+    #else:
+    #    print("Pick e or d (no spaces)")
 
-e_vs_d(e_or_d, message, count)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+e_vs_d(e_or_d, form, message, count)
