@@ -9,6 +9,8 @@
     3. Number of times to decode/encode (integer)
     4. String to decode/encode (Place inside double quotes)
 
+The noquestions file is just the functions to encode and decode. They were all transferd to base.py to be used with the questions.
+
 I am still very new to programming and will update this program as I learn more.
 
 Feel free to email any suggestions to: 1ethen358@gmail.com
