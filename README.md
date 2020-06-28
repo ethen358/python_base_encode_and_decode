@@ -7,7 +7,7 @@
     1. encode or decode
     2. base64, base32, or base16
     3. Number of times to decode/encode (integer)
-    4. String to decode/encode (Place inside double quotes)
+    4. String to decode/encode
 
 The noquestions file is just the functions to encode and decode. They were all transferd to base.py to be used with the questions.
 
